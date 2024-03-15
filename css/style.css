@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  position: relative; /* Añade posición relativa al cuerpo */
 }
 
 * {
@@ -8,35 +9,46 @@ body {
 }
 
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4); 
-}
-
-.modal-contenido {
+  position: fixed;
+  z-index: 10000; /* Un z-index aún mayor para estar por encima de la capa semitransparente */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background-color: #fefefe;
-  margin: 5% auto; 
-  padding: 10px;
-  width: 50%; 
+  border: 1px solid #888;
+  margin: auto;
+  padding: 20px;
+  width: 90%;
   height: 20%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 12px; /* Bordes redondeados */
 }
 
 .cerrar {
-  color: #aaa;
-  float: right;
+  background-color: #b0b0b0;
+  border-color: #b0b0b0;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%; /* Centra el texto horizontalmente */
+  transform: translateX(-50%);
   font-size: 28px;
   font-weight: bold;
 }
 
+.centrado {
+  text-align: center;
+  margin: 20px 0; /* Ajuste para dar espacio alrededor del botón */
+}
 
-div{
+.btn {
+  padding: 10px 20px; /* Ajuste según tus necesidades */
+  cursor: pointer;
+}
+
+div {
   display: block;
 }
 
@@ -54,14 +66,9 @@ div{
   font-size: 3vw; /* Ajusta el tamaño del texto según el ancho de la ventana */
   text-wrap: wrap;
   font-family: 'Montserrat';
-  text-shadow: 
-  -1px -1px 0 #000,  
-   1px -1px 0 #000,
-  -1px  1px 0 #000,
-   1px  1px 0 #000;
 }
 
-h2{
+h2 {
   position: absolute;
   top: 163.6vw;
   left: 45%; /* Centra el texto horizontalmente */
@@ -70,14 +77,9 @@ h2{
   font-size: 3vw; /* Ajusta el tamaño del texto según el ancho de la ventana */
   text-wrap: wrap;
   font-family: 'Montserrat';
-  text-shadow: 
-  -.5px -.5px 0 #000,  
-  .5px -.5px 0 #000,
-  -.5px .5px 0 #000,
-  .5px  .5px 0 #000;
 }
 
-.btnMapa{
+.btnMapa {
   position: absolute;
   background-color:#a67c00;
   border-radius: 5px;
@@ -91,12 +93,12 @@ h2{
   text-align: center;
 }
 
-.btnSalon{
+.btnSalon {
   position: absolute;
   background-color:#a67c00;
   border-radius: 5px;
   border-color: #e2c100;
-  top: 331.5vw;
+  top: 321.5vw;
   color: white;
   font-size: 3vw;
   left: 50%; /* Centra el texto horizontalmente */
