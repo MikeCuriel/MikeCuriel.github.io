@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div{
+  display: block;
+}
+
+.imagen-escalada {
+  width: 100%;
+  height: auto;
+}
+
+.texto-sobre-imagen {
+  position: absolute;
+  top: 154.6vw; /* Ajusta este valor para cambiar la posición vertical del texto */
+  left: 35.5%; /* Centra el texto horizontalmente */
+  right: 33.5%;
+  color: #B28B22;/* Asegúrate de que el color del texto contraste con tu imagen */
+  font-size: 3vw; /* Ajusta el tamaño del texto según el ancho de la ventana */
+  text-wrap: wrap;
+  font-family: 'Montserrat';
+  text-shadow: 
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+  -1px  1px 0 #000,
+   1px  1px 0 #000;
+}
+
+h2{
+  position: absolute;
+  top: 163.6vw;
+  left: 45%; /* Centra el texto horizontalmente */
+  right: 40%;
+  color: #874d4c;/* Asegúrate de que el color del texto contraste con tu imagen */
+  font-size: 3vw; /* Ajusta el tamaño del texto según el ancho de la ventana */
+  text-wrap: wrap;
+  font-family: 'Montserrat';
+  text-shadow: 
+  -.5px -.5px 0 #000,  
+  .5px -.5px 0 #000,
+  -.5px .5px 0 #000,
+  .5px  .5px 0 #000;
+}
+
+.btnMapa{
+  position: absolute;
+  background-color:#a67c00;
+  border-radius: 5px;
+  border-color: #e2c100;
+  top: 263.5vw;
+  color: white;
+  font-size: 3vw;
+  left: 50%; /* Centra el texto horizontalmente */
+  transform: translateX(-50%);
+  width: 15%;
+  text-align: center;
+}
+
+.btnSalon{
+  position: absolute;
+  background-color:#a67c00;
+  border-radius: 5px;
+  border-color: #e2c100;
+  top: 321.5vw;
+  color: white;
+  font-size: 3vw;
+  left: 50%; /* Centra el texto horizontalmente */
+  transform: translateX(-50%);
+  width: 15%;
+  text-align: center;
+}
