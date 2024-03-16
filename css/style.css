@@ -109,7 +109,7 @@ h2 {
 
 #btnWhats {
   position: absolute;
-  background-color:#06890a;
+  background-color:#128c7e;
   border-radius: 5px;
   border-color: transparent;
   top: 850vw;
@@ -145,7 +145,7 @@ svg {
 
 .countdown {
   position: absolute; /* Establece los elementos de la cuenta regresiva en posición absoluta */
-  top: 82vw; /* Alinea verticalmente al centro */
+  top: 82.4vw; /* Alinea verticalmente al centro */
   width: 72vw;
   height: 13vw;
   left: 20%;
