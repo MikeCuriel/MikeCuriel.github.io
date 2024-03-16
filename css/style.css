@@ -114,7 +114,7 @@ h2 {
   border-color: transparent;
   top: 850vw;
   color: white;
-  font-size: 3vw;
+  font-size: 3.4vw;
   left: 50%; /* Centra el texto horizontalmente */
   transform: translateX(-50%);
   width: 40%;
@@ -193,7 +193,7 @@ svg {
   font-size: 7vw;
   font-weight: bold; /* Peso de fuente en negrita */
   display: inline-block; /* Mostrar en línea */
-  transform: translate(-8%, -10%);
+  transform: translate(-9%, -10%);
 }
 
 .TimeMinuteText{
@@ -207,12 +207,12 @@ svg {
   font-size: 7vw;
   font-weight: bold; /* Peso de fuente en negrita */
   display: inline-block; /* Mostrar en línea */
-  transform: translate(-8%, -10%);
+  transform: translate(-10%, -10%);
 }
 
 .TimeSecondText{
   font-size: 3vw; /* Tamaño de fuente */
-  transform: translate(-4%, -80%);
+  transform: translate(-5%, -80%);
 }
 
 
