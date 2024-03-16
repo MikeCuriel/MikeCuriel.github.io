@@ -143,4 +143,76 @@ svg {
   padding: 15px, 0px;
 }
 
+.countdown {
+  position: absolute; /* Establece los elementos de la cuenta regresiva en posición absoluta */
+  top: 84.5vw; /* Alinea verticalmente al centro */
+  width: 72vw;
+  height: 13vw;
+  left: 20%;
+  right: 20%;
+  display: inline-flex;
+}
+
+.column {
+  flex: 1; /* Divide el espacio disponible igualmente entre las columnas */
+  text-align: center; /* Centra el contenido dentro de cada columna */
+  padding: 15px;
+}
+
+.TimeDay {
+  flex: 1; /* Divide el espacio disponible igualmente entre las columnas */
+  text-align: center; /* Centra el contenido dentro de cada columna */
+  font-size: 7rem;
+  font-weight: bold; /* Peso de fuente en negrita */
+  display: inline-block; /* Mostrar en línea */
+  transform: translate(-10%, -10%);
+}
+
+.TimeDayText{
+  font-size: 3vw; /* Tamaño de fuente */
+  transform: translate(-7%, -80%);
+}
+
+.TimeHour {
+  flex: 1; /* Divide el espacio disponible igualmente entre las columnas */
+  text-align: center; /* Centra el contenido dentro de cada columna */
+  font-size: 7rem;
+  font-weight: bold; /* Peso de fuente en negrita */
+  display: inline-block; /* Mostrar en línea */
+  transform: translate(-10%, -10%);
+}
+
+.TimeHourText{
+  font-size: 3vw; /* Tamaño de fuente */
+  transform: translate(-4%, -80%);
+}
+
+.TimeMinute {
+  flex: 1; /* Divide el espacio disponible igualmente entre las columnas */
+  text-align: center; /* Centra el contenido dentro de cada columna */
+  font-size: 7rem;
+  font-weight: bold; /* Peso de fuente en negrita */
+  display: inline-block; /* Mostrar en línea */
+  transform: translate(-8%, -10%);
+}
+
+.TimeMinuteText{
+  font-size: 3vw; /* Tamaño de fuente */
+  transform: translate(-4%, -80%);
+}
+
+.TimeSecond {
+  flex: 1; /* Divide el espacio disponible igualmente entre las columnas */
+  text-align: center; /* Centra el contenido dentro de cada columna */
+  font-size: 7rem;
+  font-weight: bold; /* Peso de fuente en negrita */
+  display: inline-block; /* Mostrar en línea */
+  transform: translate(-8%, -10%);
+}
+
+.TimeSecondText{
+  font-size: 3vw; /* Tamaño de fuente */
+  transform: translate(-4%, -80%);
+}
+
 
