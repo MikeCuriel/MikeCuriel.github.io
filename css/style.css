@@ -145,7 +145,7 @@ svg {
 
 .countdown {
   position: absolute; /* Establece los elementos de la cuenta regresiva en posición absoluta */
-  top: 81.5vw; /* Alinea verticalmente al centro */
+  top: 82vw; /* Alinea verticalmente al centro */
   width: 72vw;
   height: 13vw;
   left: 20%;
