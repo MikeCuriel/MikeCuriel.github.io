@@ -84,7 +84,7 @@ h2 {
   background-color:#a67c00;
   border-radius: 5px;
   border-color: #e2c100;
-  top: 273.5vw;
+  top: 410vw;
   color: white;
   font-size: 3vw;
   left: 50%; /* Centra el texto horizontalmente */
@@ -98,7 +98,21 @@ h2 {
   background-color:#a67c00;
   border-radius: 5px;
   border-color: #e2c100;
-  top: 321.5vw;
+  top: 500vw;
+  color: white;
+  font-size: 3vw;
+  left: 50%; /* Centra el texto horizontalmente */
+  transform: translateX(-50%);
+  width: 15%;
+  text-align: center;
+}
+
+.btnWhats {
+  position: absolute;
+  background-color:#06890a;
+  border-radius: 5px;
+  border-color: #e2c100;
+  top: 840vw;
   color: white;
   font-size: 3vw;
   left: 50%; /* Centra el texto horizontalmente */
