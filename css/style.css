@@ -84,7 +84,7 @@ h2 {
   background-color:#a67c00;
   border-radius: 5px;
   border-color: #e2c100;
-  top: 430vw;
+  top: 420vw;
   color: white;
   font-size: 3vw;
   left: 50%; /* Centra el texto horizontalmente */
@@ -98,7 +98,7 @@ h2 {
   background-color:#a67c00;
   border-radius: 5px;
   border-color: #e2c100;
-  top: 530vw;
+  top: 520vw;
   color: white;
   font-size: 3vw;
   left: 50%; /* Centra el texto horizontalmente */
@@ -107,16 +107,40 @@ h2 {
   text-align: center;
 }
 
-.btnWhats {
+#btnWhats {
   position: absolute;
   background-color:#06890a;
   border-radius: 5px;
-  border-color: #e2c100;
-  top: 870vw;
+  border-color: transparent;
+  top: 850vw;
   color: white;
   font-size: 3vw;
   left: 50%; /* Centra el texto horizontalmente */
   transform: translateX(-50%);
-  width: 15%;
+  width: 40%;
+  height: 80px;
   text-align: center;
+  align-items: center;
 }
+
+#whatsapp {
+  position: fixed;
+  bottom: 50%;
+  right:15px;
+  background-color: #6c757d;
+}
+
+#btnMusic {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+
+svg {
+  width: 3vw;
+  padding: 15px, 0px;
+}
+
+
