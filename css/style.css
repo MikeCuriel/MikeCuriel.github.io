@@ -162,7 +162,7 @@ svg {
 .TimeDay {
   flex: 1; /* Divide el espacio disponible igualmente entre las columnas */
   text-align: center; /* Centra el contenido dentro de cada columna */
-  font-size: 7rem;
+  font-size: 7vw;
   font-weight: bold; /* Peso de fuente en negrita */
   display: inline-block; /* Mostrar en línea */
   transform: translate(-10%, -10%);
@@ -176,7 +176,7 @@ svg {
 .TimeHour {
   flex: 1; /* Divide el espacio disponible igualmente entre las columnas */
   text-align: center; /* Centra el contenido dentro de cada columna */
-  font-size: 7rem;
+  font-size: 7vw;
   font-weight: bold; /* Peso de fuente en negrita */
   display: inline-block; /* Mostrar en línea */
   transform: translate(-10%, -10%);
@@ -190,7 +190,7 @@ svg {
 .TimeMinute {
   flex: 1; /* Divide el espacio disponible igualmente entre las columnas */
   text-align: center; /* Centra el contenido dentro de cada columna */
-  font-size: 7rem;
+  font-size: 7vw;
   font-weight: bold; /* Peso de fuente en negrita */
   display: inline-block; /* Mostrar en línea */
   transform: translate(-8%, -10%);
@@ -204,7 +204,7 @@ svg {
 .TimeSecond {
   flex: 1; /* Divide el espacio disponible igualmente entre las columnas */
   text-align: center; /* Centra el contenido dentro de cada columna */
-  font-size: 7rem;
+  font-size: 7vw;
   font-weight: bold; /* Peso de fuente en negrita */
   display: inline-block; /* Mostrar en línea */
   transform: translate(-8%, -10%);
