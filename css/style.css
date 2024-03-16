@@ -207,7 +207,7 @@ svg {
   font-size: 7vw;
   font-weight: bold; /* Peso de fuente en negrita */
   display: inline-block; /* Mostrar en línea */
-  transform: translate(-10%, -10%);
+  transform: translate(-12%, -10%);
 }
 
 .TimeSecondText{

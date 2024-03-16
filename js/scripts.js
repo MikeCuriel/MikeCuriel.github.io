@@ -4,7 +4,6 @@ window.onload = function() {
   var audio = document.getElementById("miMusica");
   var stop = document.getElementById("btnMusic");
 
-
   // Abrir la modal automáticamente
   modal.style.display = "block";
   document.body.style.overflow = "hidden"; 
@@ -21,6 +20,7 @@ window.onload = function() {
     if (event.target == modal) {
       modal.style.display = "none";
       audio.play();
+      stop.src= '../../img/play.png';
     }
   }
 
@@ -29,9 +29,11 @@ window.onload = function() {
       if(!audio.paused){
         modal.style.display = "none";
         audio.pause();
+        stop.src= '../../img/play.png';
       }
       else{
         audio.play();
+        stop.src= '../../gif/music.gif';
       }
     }
   }
@@ -75,3 +77,20 @@ $(document).ready(function(){
      document.getElementById("countdown").innerHTML = "EXPIRED";
    }
  }, 1000);
+
+ window.addEventListener('beforeunload', function(event) {
+  var audio = document.getElementById('audio');
+  audio.pause();
+});
+
+var estadoReproduccion = false; // Estado inicial de la reproducción
+
+function cambiarImagen() {
+  var boton = document.getElementById('btnMusic');
+  if (estadoReproduccion) {
+    boton.src = 'play.png'; // Cambia a la imagen de play
+  } else {
+    boton.src = 'pause.png'; // Cambia a la imagen de pausa
+  }
+  estadoReproduccion = !estadoReproduccion; // Invierte el estado de reproducción
+}
