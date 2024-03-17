@@ -9,13 +9,9 @@ $(document).ready(function(){
         // Obtener el número de teléfono de la misma fila
         var telefono = $(this).closest('tr').find('.NombreContacto').val();
   
-        // Imprimir en la consola los datos obtenidos
-        console.log("Nombre:", nombre);
-        console.log("Teléfono:", telefono);
-  
         var phoneNumber = "+5213319923518";
         var message = "Hola";
-
+        alert("Nombre obtenido: " + phoneNumber);
         // Crear el enlace de WhatsApp con el nombre y el número de teléfono
         var mensaje = encodeURIComponent(nombre + ' te invito a mi fiesta de XV de Jatziry Giselle. Haz clic aquí para unirte: https://mikecuriel.github.io/pagina/Familia/' + nombre.replace(" ", "") + '.html');
         var url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
