@@ -1,4 +1,13 @@
 $(document).ready(function(){
+    $("#btnWhats").click(function(){
+        var phoneNumber = "+5213319923518"; // Reemplaza con el número de teléfono al que deseas enviar el mensaje
+        var message = $(this).data("message");
+        var url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+        window.open(url, "_blank");
+    });
+  });
+
+$(document).ready(function(){
     $("#EnviarInvitacion").click(function(){
   
         // Obtener el nombre de la persona desde el atributo data-nombre
