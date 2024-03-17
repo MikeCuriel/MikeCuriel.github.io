@@ -48,77 +48,49 @@ $(document).ready(function(){
   });
 });
 
-//  // Establecer la fecha de finalización del contador
-//  var countdownDate = new Date("Apr 27, 2024 16:00:00").getTime();
+ // Establecer la fecha de finalización del contador
+ var countdownDate = new Date("Apr 27, 2024 16:00:00").getTime();
 
-//  // Actualizar el contador cada segundo
-//  var countdown = setInterval(function() {
-//    // Obtener la fecha y hora actuales
-//    var now = new Date().getTime();
+ // Actualizar el contador cada segundo
+ var countdown = setInterval(function() {
+   // Obtener la fecha y hora actuales
+   var now = new Date().getTime();
    
-//    // Calcular la diferencia entre la fecha de finalización y la fecha actual
-//    var distance = countdownDate - now;
+   // Calcular la diferencia entre la fecha de finalización y la fecha actual
+   var distance = countdownDate - now;
    
-//    // Calcular los días, horas, minutos y segundos restantes
-//    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-//    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-//    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+   // Calcular los días, horas, minutos y segundos restantes
+   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
    
-//   // Mostrar el resultado en los elementos HTML
-//   document.getElementById("days").innerHTML = days;
-//   document.getElementById("hours").innerHTML = hours;
-//   document.getElementById("minutes").innerHTML = minutes;
-//   document.getElementById("seconds").innerHTML = seconds;
+  // Mostrar el resultado en los elementos HTML
+  document.getElementById("days").innerHTML = days;
+  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("seconds").innerHTML = seconds;
    
-//    // Si el contador llega a cero, detenerlo
-//    if (distance < 0) {
-//      clearInterval(countdown);
-//      document.getElementById("countdown").innerHTML = "EXPIRED";
-//    }
-//  }, 1000);
+   // Si el contador llega a cero, detenerlo
+   if (distance < 0) {
+     clearInterval(countdown);
+     document.getElementById("countdown").innerHTML = "EXPIRED";
+   }
+ }, 1000);
 
-//  window.addEventListener('beforeunload', function(event) {
-//   var audio = document.getElementById('audio');
-//   audio.pause();
-// });
+ window.addEventListener('beforeunload', function(event) {
+  var audio = document.getElementById('audio');
+  audio.pause();
+});
 
-// var estadoReproduccion = false; // Estado inicial de la reproducción
+var estadoReproduccion = false; // Estado inicial de la reproducción
 
-// function cambiarImagen() {
-//   var boton = document.getElementById('btnMusic');
-//   if (estadoReproduccion) {
-//     boton.src = 'play.png'; // Cambia a la imagen de play
-//   } else {
-//     boton.src = 'pause.png'; // Cambia a la imagen de pausa
-//   }
-//   estadoReproduccion = !estadoReproduccion; // Invierte el estado de reproducción
-// }
-
-
-
-
-
-// var enviarButtons = document.querySelectorAll('.enviar-btn');
-
-//   // Iterar sobre cada enlace y agregar un evento de clic
-//   enviarButtons.forEach(function(button) {
-//     button.addEventListener('click', function(event) {
-//       console.log("Entre");
-//       // Evitar el comportamiento predeterminado del enlace
-//       event.preventDefault();
-
-//       // Obtener el nombre de la persona desde el atributo data-nombre
-//       var nombre = button.getAttribute('data-nombre');
-
-//       // Obtener el número de teléfono de la misma fila
-//       var telefono = button.parentNode.previousElementSibling.querySelector('.contacto').value;
-
-//       // Crear el enlace de WhatsApp con el nombre y el número de teléfono
-//       var mensaje = nombre +'te invito a mi fiesta de XV de Jatziry Giselle, haz clic aquí para unirte: https://mikecuriel.github.io/pagina/Familia/BibianaMorales.html' + nombre.replace(" ", "") + '.html';
-//       var url = 'https://api.whatsapp.com/send?phone=' + telefono + '&text=' + encodeURIComponent(mensaje);
-
-//       // Redirigir al enlace de WhatsApp
-//       window.location.href = url;
-//     });
-//   });
+function cambiarImagen() {
+  var boton = document.getElementById('btnMusic');
+  if (estadoReproduccion) {
+    boton.src = 'play.png'; // Cambia a la imagen de play
+  } else {
+    boton.src = 'pause.png'; // Cambia a la imagen de pausa
+  }
+  estadoReproduccion = !estadoReproduccion; // Invierte el estado de reproducción
+}
