@@ -16,7 +16,7 @@ $(document).ready(function(){
   
         // Crear el enlace de WhatsApp con el nombre y el número de teléfono
         var mensaje = encodeURIComponent(nombre + ' te invito a mi fiesta de XV de Jatziry Giselle. Haz clic aquí para unirte: https://mikecuriel.github.io/pagina/Familia/' + nombre.replace(" ", "") + '.html');
-        var url = 'https://api.whatsapp.com/send?phone=' + '+521' + telefono + '&text=' + mensaje;
+        var url = "https://wa.me/" + '+521' + telefono + "?text=" + mensaje;
   
         // Abrir el enlace en una nueva pestaña
         window.open(url, "_blank");
