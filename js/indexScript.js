@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".EnviarInvitacion").click(function(){
+    $(".EnviarInvitacion").click(function(event){
         // Obtener el valor del primer <td> (nombre)
         var primerTD = $(this).closest('tr').find('td:first-child').text();
         
