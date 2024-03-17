@@ -16,6 +16,8 @@ $(document).ready(function(){
         var mensaje = encodeURIComponent(nombre + ' te invito a mi fiesta de XV de Jatziry Giselle. Haz clic aquí para unirte: https://mikecuriel.github.io/pagina/Familia/' + nombre.replace(" ", "") + '.html');
         var url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
   
+        alert("URL:" + url);
+
         // Abrir el enlace en una nueva pestaña
         window.open(url, "_blank");
     });
