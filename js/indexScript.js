@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".EnviarInvitacion").click(function(event){
+    $("#EnviarInvitacion").click(function(event){
         // Evitar el comportamiento predeterminado del enlace
         event.preventDefault();
   
