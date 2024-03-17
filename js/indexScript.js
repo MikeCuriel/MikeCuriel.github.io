@@ -10,7 +10,7 @@ $(document).ready(function(){
         var telefono = $(this).closest('tr').find('.NombreContacto').val();
 
         // Crear el enlace de WhatsApp con el nombre y el número de teléfono
-        var mensaje = encodeURIComponent('Hola ' + primerTD + ' soy Jatziry Giselle tienen un lugar especial reservado en mi corazón y en mi fiesta de XV años, su presencia sería el toque perfecto para hacer de este día un momento inolvidable. ¿Qué dices? ¿Te unes a nosotros para celebrar juntos? ¡Haz clic aquí para confirmar tu asistencia y ser parte de este día único en mi vida!". Haz click aqui para unirte: https://mikecuriel.github.io/pagina/Familia/' + nombre.replace(" ", "") + '.html');
+        var mensaje = encodeURIComponent('Hola ' + primerTD + ' soy Jatziry Giselle tienen un lugar especial reservado en mi corazón y en mi fiesta de XV años, su presencia sería el toque perfecto para hacer de este día un momento inolvidable. ¿Qué dices? ¿Te unes a nosotros para celebrar juntos? ¡Haz clic aquí para confirmar tu asistencia y ser parte de este día único en mi vida!": https://mikecuriel.github.io/pagina/Familia/' + nombre.replace(" ", "") + '.html');
         var url = "https://wa.me/" + "+521" + telefono + "?text=" + mensaje;
 
         // Abrir el enlace en una nueva pestaña
