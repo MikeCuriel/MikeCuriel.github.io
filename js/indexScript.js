@@ -1,7 +1,5 @@
 $(document).ready(function(){
-    $("#EnviarInvitacion").click(function(event){
-        // Evitar el comportamiento predeterminado del enlace
-        event.preventDefault();
+    $("#EnviarInvitacion").click(function(){
   
         // Obtener el nombre de la persona desde el atributo data-nombre
         var nombre = $(this).attr('data-nombre');
