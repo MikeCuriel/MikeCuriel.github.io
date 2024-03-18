@@ -239,3 +239,19 @@ svg {
 .detalle-invitado {
   flex: 1; /* Permite que los detalles ocupen el espacio restante */
 }
+
+.row{
+  background-image: url("../../jatziry/img/Carrusel/F1.png");
+}
+
+.carousel-inner {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  width: auto; /* Ancho del contenedor */
+  height: 68vw; /* Altura deseada para el contenedor */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor */
+}
+
+.carousel-inner img {
+  height: 38vw; /* Altura automática para mantener la proporción */
+}
