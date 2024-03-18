@@ -10,7 +10,6 @@ $(document).ready(function(){
             if (tab.classList.contains('active')) {
                 // Obtener el valor del atributo 'href' para identificar la pestaña seleccionada
                 selectedTab = tab.querySelector('a').getAttribute('href');
-                alert(selectedTab);
             }});
     
         // Obtener el valor del primer <td> (nombre)
