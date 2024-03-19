@@ -93,4 +93,5 @@ function cambiarImagen() {
     boton.src = 'pause.png'; // Cambia a la imagen de pausa
   }
   estadoReproduccion = !estadoReproduccion; // Invierte el estado de reproducción
+  alert("Sali");
 }

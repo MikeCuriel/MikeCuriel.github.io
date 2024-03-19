@@ -253,5 +253,14 @@ svg {
 }
 
 .carousel-inner img {
-  height: 38vw; /* Altura automática para mantener la proporción */
+  margin-top: 28%;
+  height: 48vw; /* Altura automática para mantener la proporción */
+}
+
+.carousel-control-prev{
+margin-top: 50%;
+}
+
+.carousel-control-next{
+  margin-top: 50%;
 }
