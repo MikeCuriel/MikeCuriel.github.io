@@ -240,6 +240,12 @@ svg {
   flex: 1; /* Permite que los detalles ocupen el espacio restante */
 }
 
+.row{
+  background-image: url("../img/Carrusel/F1.png");
+  height: 68vw;
+  width: 100vw;
+}
+
 .carousel-inner {
   display: flex;
   align-items: center; /* Centra verticalmente */
