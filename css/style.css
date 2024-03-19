@@ -240,8 +240,9 @@ svg {
   flex: 1; /* Permite que los detalles ocupen el espacio restante */
 }
 
-.col-sm-6{
+.row{
   background-image: url("../img/Carrusel/F1.png");
+  height: 68vw;
 }
 
 .carousel-inner {
