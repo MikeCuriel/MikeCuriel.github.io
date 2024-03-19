@@ -242,7 +242,7 @@ svg {
 
 .divCarrusel{
   background-image: url("../img/Carrusel/F1.png");
-  height: 68vw;
+  height: 88vw;
   width: auto;
 }
 
@@ -250,7 +250,7 @@ svg {
   display: flex;
   align-items: center; /* Centra verticalmente */
   width: auto; /* Ancho del contenedor */
-  height: 68vw; /* Altura deseada para el contenedor */
+  height: 88vw; /* Altura deseada para el contenedor */
   overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor */
 }
 
